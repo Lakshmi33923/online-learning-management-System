@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>C++ Quiz</title>
+    <style>
+        .question-container {
+            margin-bottom: 20px;
+        }
+        .question {
+            font-weight: bold;
+        }
+        .quiz-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color:rgba(0, 0, 0, 0.9);">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#">Tutorials</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="color: white;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="learn.html" style="color:white;">Learn</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="quiz.html" style="color:white;">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html" style="color:white;">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="quiz-container">
+        <h1 class="text-center mb-4">C++ Programming Quiz</h1>
+
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question-container">
+                <p class="question">Question 1: What is a correct syntax to output "Hello World" in C++?</p>
+                <input type="radio" name="q1" value="1"> cout>>("hello")<br>
+                <input type="radio" name="q1" value="2"> cin("Hellow world.")<br>
+                <input type="radio" name="q1" value="3"> cout<<("Hello world")<br>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-container">
+                <p class="question">Question 2: What is OOP?</p>
+                <input type="radio" name="q2" value="1"> object orientation process<br>
+                <input type="radio" name="q2" value="2"> object oriented protocol<br>
+                <input type="radio" name="q2" value="3"> object oriented programming<br>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-container">
+                <p class="question">Question 3: Is C++ completely OOP?</p>
+                <input type="radio" name="q3" value="1"> yes<br>
+                <input type="radio" name="q3" value="2"> no<br>
+                <input type="radio" name="q3" value="3"> partial<br>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-container">
+                <p class="question">Question 4: What is the output of below code?</p>
+                <pre>#include <iostream>
+using namespace std;
+int main() {
+    int a, b;
+    a = b;
+    cout << "hello";
+}</pre>
+                <input type="radio" name="q4" value="1"> error<br>
+                <input type="radio" name="q4" value="2"> hello<br>
+                <input type="radio" name="q4" value="3"> none<br>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-container">
+                <p class="question">Question 5: What is .c++?</p>
+                <input type="radio" name="q5" value="1"> extension to save C++ source code<br>
+                <input type="radio" name="q5" value="2"> to save doc file<br>
+                <input type="radio" name="q5" value="3"> none<br>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question-container">
+                <p class="question">Question 6: What is >> in C++?</p>
+                <input type="radio" name="q6" value="1"> binary operator<br>
+                <input type="radio" name="q6" value="2"> unary operator<br>
+                <input type="radio" name="q6" value="3"> left shift operator<br>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question-container">
+                <p class="question">Question 7: What is the output of below code?</p>
+                <pre>#include <iostream>
+using namespace std;
+int main() {
+    int a = 10;
+    a++;
+    ++a;
+    cout << a;
+}</pre>
+                <input type="radio" name="q7" value="1"> 11<br>
+                <input type="radio" name="q7" value="2"> 12<br>
+                <input type="radio" name="q7" value="3"> a<br>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question-container">
+                <p class="question">Question 8: What is a loop?</p>
+                <input type="radio" name="q8" value="1"> block of code<br>
+                <input type="radio" name="q8" value="2"> repetition of block of code<br>
+                <input type="radio" name="q8" value="3"> iterative language models<br>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question-container">
+                <p class="question">Question 9: Define variable in C++:</p>
+                <input type="radio" name="q9" value="1"> named memory location<br>
+                <input type="radio" name="q9" value="2"> store datatypes<br>
+                <input type="radio" name="q9" value="3"> references<br>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question-container">
+                <p class="question">Question 10: Does C++ have a string datatype directly?</p>
+                <input type="radio" name="q10" value="1"> yes<br>
+                <input type="radio" name="q10" value="2"> may or may not<br>
+                <input type="radio" name="q10" value="3"> no<br>
+            </div>
+
+            <button type="button" onclick="checkQuiz()" class="btn btn-primary">Submit Quiz</button>
+        </form>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: "3",
+            q2: "3",
+            q3: "2",
+            q4: "2",
+            q5: "1",
+            q6: "3",
+            q7: "2",
+            q8: "2",
+            q9: "1",
+            q10: "3"
+        };
+
+        function checkQuiz() {
+            let score = 0;
+            for (let i = 1; i <= 10; i++) {
+                const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === correctAnswers[`q${i}`]) {
+                    score++;
+                }
+            }
+            alert(`You scored ${score} out of 10`);
+        }
+    </script>
+</body>
+</html>

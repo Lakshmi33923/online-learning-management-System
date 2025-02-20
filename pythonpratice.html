@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .nav-item {
+            margin-right: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color:rgba(0, 0, 0, 0.9);">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#">Tutorials</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contentpage.html">Learn</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-disabled="true" href="quiz.html">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-disabled="true" href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Python Programming Quiz</h1>
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="mb-3">
+                <label for="q1">Question 1: What is print() in Python?</label><br>
+                <input type="radio" name="q1" value="1"> output function, yes<br>
+                <input type="radio" name="q1" value="2"> output function, no<br>
+                <input type="radio" name="q1" value="3"> none<br>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="mb-3">
+                <label for="q2">Question 2: What is OOP?</label><br>
+                <input type="radio" name="q2" value="1"> object orientation process<br>
+                <input type="radio" name="q2" value="2"> object-oriented protocol<br>
+                <input type="radio" name="q2" value="3"> object-oriented programming<br>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="mb-3">
+                <label for="q3">Question 3: Which is a Python framework?</label><br>
+                <input type="radio" name="q3" value="1"> Spring<br>
+                <input type="radio" name="q3" value="2"> Django<br>
+                <input type="radio" name="q3" value="3"> Bootstrap<br>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="mb-3">
+                <label for="q4">Question 4: What is the output of the following code?</label><br>
+                <code>
+                    a = 10<br>
+                    a = 9.8<br>
+                    a = 10 + 2 + a<br>
+                    print(Math.ceil(a))<br>
+                </code><br>
+                <input type="radio" name="q4" value="1"> 21<br>
+                <input type="radio" name="q4" value="2"> 22<br>
+                <input type="radio" name="q4" value="3"> Error<br>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="mb-3">
+                <label for="q5">Question 5: What is .p?</label><br>
+                <input type="radio" name="q5" value="1"> Extension to save Python source code<br>
+                <input type="radio" name="q5" value="2"> To save doc file<br>
+                <input type="radio" name="q5" value="3"> None<br>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="mb-3">
+                <label for="q6">Question 6: What is GUI?</label><br>
+                <input type="radio" name="q6" value="1"> Graphical User Interface<br>
+                <input type="radio" name="q6" value="2"> Grounding Utilization Intelligence<br>
+                <input type="radio" name="q6" value="3"> Graphical User Interfface<br>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="mb-3">
+                <label for="q7">Question 7: What is the output of the following code?</label><br>
+                <code>
+                    l = [1, 2, 3, 4]<br>
+                    l = l + 2<br>
+                    print(l)<br>
+                </code><br>
+                <input type="radio" name="q7" value="1"> Error<br>
+                <input type="radio" name="q7" value="2"> [3, 4, 5, 6]<br>
+                <input type="radio" name="q7" value="3"> None<br>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="mb-3">
+                <label for="q8">Question 8: What is the output of the following code?</label><br>
+                <code>
+                    l = [1, 2, 3]<br>
+                    z = 0 + l[0]<br>
+                    z = (z + 2) % 100<br>
+                    print(l, z)<br>
+                </code><br>
+                <input type="radio" name="q8" value="1"> Error<br>
+                <input type="radio" name="q8" value="2"> [1, 2, 3] 3<br>
+                <input type="radio" name="q8" value="3"> [1, 2, 3] 8<br>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="mb-3">
+                <label for="q9">Question 9: Define a list in Python</label><br>
+                <input type="radio" name="q9" value="1"> Stores both homogeneous and non-homogeneous values.<br>
+                <input type="radio" name="q9" value="2"> Stores both homogeneous and non-homogeneous values and is faster than arrays.<br>
+                <input type="radio" name="q9" value="3"> Stores values and is faster than arrays.<br>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="mb-3">
+                <label for="q10">Question 10: Choose the missed code segment to get the correct output</label><br>
+                <code>
+                    a = 10<br>
+                    '''missed code'''<br>
+                    print("ended")<br>
+                </code><br>
+                <input type="radio" name="q10" value="1"> while(i <= a + 1): print(i, endl="")<br>
+                <input type="radio" name="q10" value="2"> i = 0 while(i <= a + 1): print(i, end="")<br>
+                <input type="radio" name="q10" value="3"> i = 0 while(i <= a): print(i + 1, end="")<br>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" class="btn btn-primary" onclick="checkQuiz()">Submit Quiz</button>
+        </form>
+    </div>
+
+    <script>
+        // Correct answers for each question
+        const correctAnswers = {
+            q1: "1",
+            q2: "3",
+            q3: "2",
+            q4: "3",
+            q5: "1",
+            q6: "1",
+            q7: "1",
+            q8: "2",
+            q9: "1",
+            q10: "3"
+        };
+        function checkQuiz() {
+            let score = 0;
+            for (let i = 1; i <= 10; i++) {
+                const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === correctAnswers[`q${i}`]) {
+                    score++;
+                }
+            }
+            alert(`You scored ${score} out of 10`);
+        }
+    </script>
+</body>
+</html>
